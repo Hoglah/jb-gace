@@ -1,0 +1,69 @@
+#contact {
+  background-image: url("../../assets/strc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contact .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+#contact .left__container {
+  background: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: var(--radius-3);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#contact .contact__info {
+  margin: 20px 0;
+}
+
+#contact .contact__info .icon {
+  background: var(--primary);
+  color: var(--color-white);
+}
+
+#contact .control {
+  display: block;
+  border: var(--gray-border);
+  border-width: 2px;
+  width: 100%;
+  padding: 0px 15px;
+  height: 50px;
+  border-radius: var(--radius-1);
+  margin: 15px 0px;
+  background: var(--bg-secondary);
+  resize: none;
+  transition: var(--transition);
+}
+
+#contact .control:focus {
+  border-color: var(--primary);
+}
+
+#contact textarea.control {
+  height: 100px;
+  padding: 10px;
+}
+
+#contact .form__bottom {
+  margin-top: 30px;
+}
+
+#contact .form__bottom .btn {
+  width: 100%;
+  padding: 15px 20px;
+}
+
+@media (max-width: 930px) {
+  #contact .container {
+    grid-template-columns: 100%;
+  }
+}

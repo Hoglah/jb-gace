@@ -1,0 +1,55 @@
+.achivements {
+  display: flex;
+  background-image: url("../../assets/watercolor.png");
+  background-repeat: no-repeat;
+  background-size: 100% 200px;
+}
+
+.achivements .achievement__card {
+  padding: 1rem;
+}
+
+.achivements .achievement__card .flex {
+  align-items: center;
+  gap: 5px;
+}
+
+.achivements .achievement__card h3 {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+@media (max-width: 1260px) {
+  .achivements .achievement__card .heading {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .achivements .achievement__card p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 930px) {
+  .achivements {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .achivements .achievement__card {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .achivements .achievement__card .title {
+    font-size: 12px;
+  }
+  .achivements .achievement__card .heading {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .achivements .achievement__card .flex {
+    justify-content: center;
+  }
+  .achivements .achievement__card p {
+    font-size: 9px;
+  }
+}

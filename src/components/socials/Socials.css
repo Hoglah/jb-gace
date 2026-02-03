@@ -1,0 +1,8 @@
+.socials {
+  align-items: center;
+  gap: 5px;
+}
+
+.socials .icon {
+  border: var(--gray-border);
+}
